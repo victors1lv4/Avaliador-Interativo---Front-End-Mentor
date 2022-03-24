@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(216, 12%, 8%);
+}
+#first-window {
+    transition: all 0.5s;
+}
+.container {
+    background-color: hsl(213, 19%, 18%);
+    display: block;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 30px;
+}
+.container-inside {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+#star {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: hsl(214, 18%, 15%);
+    padding: 10px;
+    border-radius: 50%;
+}
+.text {
+    font-family: 'Overpass', sans-serif;
+    color: white;
+}
+#t1 {
+    text-align: start;
+    margin-bottom: 10px;
+}
+#t2 {
+    text-align: start;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.container-select {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn {
+    font-family: 'Overpass', sans-serif;
+    color: white;
+    background-color: hsl(214, 18%, 15%);
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 30px;
+}
+.btn,
+.submit {
+    transition: all 0.3s;
+}
+.btn.active {
+    background-color: hsl(25, 97%, 53%);
+}
+/*.btn:hover(Ao passar o mouse por cima de cada elemento 
+ele vai aplicar o background-color cinza. Já :not[pseudo-classe](.active)
+aplica esse background-color apenas no elemento que não
+tiver a classe (.active)*/
+.btn:hover:not(.active) {
+    background-color: hsl(216, 12%, 54%);
+}
+button {
+    outline: 0;
+    border: 0;
+    margin-top: 20px;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 20px;
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    background-color: hsl(25, 86%, 36%);
+}
+#img-window2 {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.box-text {
+    width: 60%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: hsl(214, 18%, 15%);
+    margin: auto;
+}
+.text-write {
+    color: hsl(25, 97%, 53%);
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+#t3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#t4 {
+    text-align: center;
+    font-size: 15px;
+}
